@@ -1,0 +1,98 @@
+        :root {
+            --bg-color: #1a1a1a;
+            --second-bg-color: #2c2c2c;
+            --text-color: #ffffff;
+            --main-color: #ff7f00;
+            --main-color-hover: #e76e00;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            display: flex;
+        }
+
+        .container {
+            background-color: var(--second-bg-color);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+            width: 100%;
+            margin: auto;
+            border: 1px solid var(--main-color);
+
+        }
+
+        .judul {
+            text-align: center;
+            color: var(--text-color);
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--text-color);
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        input[type="number"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid var(--main-color);
+            box-sizing: border-box;
+            color: var(--bg-color);
+            background-color: var(--text-color);
+            font-weight: bold;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: var(--main-color);
+            border: none;
+            color: var(--text-color);
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: var(--main-color-hover);
+        }
+
+        .hasil {
+            margin-top: -1rem;
+            text-align: center;
+            color: var(--text-color);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .operator {
+            font-size: 2rem;
+            color: var(--main-color);
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            padding-top: 2rem;
+            color: #e76e00;
+        }

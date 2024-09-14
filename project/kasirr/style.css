@@ -1,0 +1,111 @@
+:root {
+    --bg-color: #1a1a1a;
+    --second-bg-color: #2c2c2c;
+    --text-color: #ffffff;
+    --main-color: #ff7f00;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--second-bg-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--main-color);
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--main-color);
+}
+
+h2,
+h3 {
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+select,
+input[type="number"],
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="submit"] {
+    background: var(--main-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    background-color: #e76e00;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 14px;
+    border: 1px solid var(--main-color);
+    text-align: center;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+th {
+    background: var(--second-bg-color);
+}
+
+a {
+    color: var(--main-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #e76e00;
+}
+
+.error {
+    color: red;
+}

@@ -1,0 +1,3 @@
+<?php
+echo "INI ADALAH HALAMAN PROFILE";
+?>
